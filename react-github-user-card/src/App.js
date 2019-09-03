@@ -24,16 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
        <h1 className='title'>Github Followers</h1>
-       {/* {this.state.users.map(user => {
-         return (
-           <>
-          <img src={user.avatar_url} />
-          <h3>{user.login}</h3>
-          <h4>{user.url}</h4>
-         </>
-         )
-       })} */}
-       <Card users={this.state.users}/>
+       <Card id={this.state.users.id} users={this.state.users}/>
       </div>
     );
   }
